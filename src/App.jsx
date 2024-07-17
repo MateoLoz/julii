@@ -9,7 +9,7 @@ function App() {
   return (
  <BrowserRouter>
   <Routes>
-  <Route path='/usu' element={<CrudApp/>}></Route>
+  <Route path='/' element={<CrudApp/>}></Route>
   <Route path='/create' element={<CrudApp/>}></Route>
   <Route path='/update' element={<CrudApp/>}></Route>
   <Route path='/serch' element={<CrudApp/>}></Route>
