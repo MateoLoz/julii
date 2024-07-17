@@ -18,7 +18,7 @@ const CrudApp = () =>{
     const [urlfilter,seturlfilter] = useState();
     const [urlserch,seturlserch] = useState('https://juli-db.vercel.app/serch');
     let api = HelperHttp();
-    let url = "https://juli-db.vercel.app/"; 
+    let url = "https://juli-db.vercel.app/usu"; 
     let urlb = "https://julieta-api.vercel.app/Users";
     
    
