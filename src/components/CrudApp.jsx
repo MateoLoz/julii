@@ -18,7 +18,7 @@ const CrudApp = () =>{
     const [urlfilter,seturlfilter] = useState();
     const [urlserch,seturlserch] = useState('https://juli-db.vercel.app/serch');
     let api = HelperHttp();
-    let url = "https://juli-db.vercel.app/usu"; 
+    let url = "https://juli-db.vercel.app/"; 
     let urlb = "https://julieta-api.vercel.app/Users";
     
    
@@ -38,7 +38,7 @@ const CrudApp = () =>{
     useEffect(()=>{
         if(!filter && !serch){
      setLoading(true);
-     axios.get(url).then(res =>{
+     axios.get(`${url}usu`).then(res =>{
        
         if(!res.err){
             setDb(res.data);
