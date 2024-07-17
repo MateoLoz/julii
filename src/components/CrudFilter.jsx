@@ -196,7 +196,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 9 ){
 
-        axios.get(`${url}usu`).then((res)=>{
+        axios.get(`${url}`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
