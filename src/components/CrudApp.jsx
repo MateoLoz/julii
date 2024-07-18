@@ -38,10 +38,10 @@ const CrudApp = () =>{
     useEffect(()=>{
         if(!filter && !serch){
      setLoading(true);
-     axios.get(`${url}`).then(res =>{
+     axios.get(url).then(res =>{
        
         if(!res.err){
-            setDb(res.data);
+            setDb(res.data.row);
             setError(null);
         }
         else{
