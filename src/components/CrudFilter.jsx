@@ -84,7 +84,7 @@ const evaluationFilter = (id,valor) =>{
          
                 console.log(res.data);
                 console.log(res.status);
-                    setDb(res.data);
+                    setDb(res.data.rows);
             
         }).catch((err)=>{
             console.log(err);
@@ -96,7 +96,7 @@ const evaluationFilter = (id,valor) =>{
            
                 console.log(res.data);
                 console.log(res.status);
-             setDb(res.data);
+             setDb(res.data.rows);
       
         }).catch((err)=>{
             console.log(err);
@@ -110,7 +110,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);
@@ -125,7 +125,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);
@@ -140,7 +140,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);
@@ -155,7 +155,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);
@@ -170,7 +170,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);
@@ -185,7 +185,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);
@@ -200,7 +200,7 @@ const evaluationFilter = (id,valor) =>{
            
             console.log(res.data);
             console.log(res.status);
-         setDb(res.data);
+         setDb(res.data.rows);
   
     }).catch((err)=>{
         console.log(err);

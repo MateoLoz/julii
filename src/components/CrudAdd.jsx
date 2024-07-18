@@ -153,9 +153,7 @@ async function postdata(){
          membresia,
          stado,
          vencimiento,
-         horas,
-         entrada,
-          salida
+         horas
       }).then((res)=>{
       alert('Usuario Agregado correctamente!');
        console.log(res.data);

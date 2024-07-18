@@ -16,7 +16,7 @@ const CrudApp = () =>{
     const [keyserch,setkeyserch] =useState('');
 
     const [urlfilter,seturlfilter] = useState();
-    const [urlserch,seturlserch] = useState('https://juli-db.vercel.app/serch');
+    // const [urlserch,seturlserch] = useState('https://juli-db.vercel.app/serch');
     let api = HelperHttp();
     let url = "https://postgres-api-kappa.vercel.app/"; 
     let urlb = "https://julieta-api.vercel.app/Users";
@@ -41,7 +41,7 @@ const CrudApp = () =>{
      axios.get(url).then(res =>{
        
         if(!res.err){
-            setDb(res.data.row);
+            setDb(res.data.rows);
             setError(null);
         }
         else{
@@ -84,7 +84,7 @@ const CrudApp = () =>{
      axios.get(url)
      .then((res)=> {
         if(res.ok){
-            setDb([...db,res.data]);
+            setDb([...db,res.data.rows]);
             setError(false);
             alert("usuario agregado correctamente!");
         }})
@@ -121,13 +121,13 @@ const CrudApp = () =>{
           let isDelete = window.confirm(`Estas seguro de eliminar '${id}'?`)
 
             if(isDelete){
-               let peticion = axios.delete(url,{ data: { id: id }})
-                console.log(peticion)
+               axios.delete(url,{ data: { id: id }})
                  .then((res)=>{
                      if(res.ok){
                           console.log(res.status);
                           let newData = db.filter(el => el.id !== id)  
                           setDb(newData)
+                          navigator('/');
                          window.location.reload(true);
                      }
                  }).catch((err)=>{

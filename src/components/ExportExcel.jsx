@@ -14,7 +14,7 @@ const ExportExcel = () =>{
 
 
         const fetchdata = () =>{
-            axios.get(urlb).then(r => setdatos(r.data));
+            axios.get(urlb).then(r => setdatos(r.data.rows));
         }
         fetchdata();
     },[])
